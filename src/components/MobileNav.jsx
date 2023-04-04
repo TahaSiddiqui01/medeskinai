@@ -80,7 +80,7 @@ function MobileNav() {
         <section className="md:min-h-screen  w-full banner-section home-page">
           <div className="tablet:w-[80px] w-[50px]  md:h-[100vh] h-[70vh] pb-14 flex flex-col justify-between items-center bg-lightgray mobile-sidebar">
             <div className="w-[80px] h-[80px] mycenter bg-primary">
-              <div className="mb-4">
+              <div className="mb-0">
                 <HiMenuAlt1
                   className="text-[25px] text-white cursor-pointer"
                   onClick={() => {
@@ -100,13 +100,13 @@ function MobileNav() {
             <div className="flex items-center space-x-2 absolute left-[50px] tablet:left-[150px] top-0 z-50 md:p-4 p-0">
               <NavLink to={"/"}>
                 <img
-                  className="tablet:w-[150px] w-[100px] pl-4 pt-2 sm:pl-0 sm:pt-0 ms-4"
+                  className="tablet:w-[150px] logo-btn mt-1 w-[100px] pl-4 pt-2 sm:pl-0 sm:pt-0 ms-4"
                   src="/img/logo.svg"
                   alt="logo"
                 />
               </NavLink>
             </div>
-            <div className="flex tablet:h-[80px] h-[45px]  absolute top-0 right-0 z-50">
+            <div className="flex tablet:h-[80px] h-[45px] mt-3 login-btn absolute top-0 right-0 z-50">
               <NavLink
                 to={"/login"}
                 className="h-full tablet:w-[170px] w-[100px] mycenter bg-white text-black"

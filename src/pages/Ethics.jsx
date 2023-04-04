@@ -86,13 +86,13 @@ function Ethics() {
             <div className="flex items-center space-x-2 absolute left-[50px] tablet:left-[150px] top-0 z-50 md:p-4 p-0">
               <NavLink to={"/"}>
                 <img
-                  className="tablet:w-[150px] mx-1 w-[100px] pl-4 pt-2 sm:pl-0 sm:pt-0 res-logo"
+                  className="tablet:w-[150px] logo-btn mx-1 w-[100px] pl-4 pt-2 sm:pl-0 sm:pt-0 res-logo"
                   src="/img/logo.svg"
                   alt="logo"
                 />
               </NavLink>
             </div>
-            <div className="flex tablet:h-[80px] h-[45px]  absolute top-0 right-0 z-50">
+            <div className="flex login-btn tablet:h-[80px] h-[45px]  absolute top-0 right-0 z-50">
               <NavLink
                 to={"/login"}
                 className="h-full tablet:w-[170px] w-[100px] mycenter res-anchor text-black"
@@ -108,7 +108,7 @@ function Ethics() {
               <div className="slide-1 w-full relative">
                 <img
                   src="/img/Ethics.jpg"
-                  className="w-full md:h-[100vh] h-[70vh] object-cover brightness-[70%]"
+                  className="w-full md:h-[100vh] h-[100vh] object-cover brightness-[70%]"
                   alt=""
                 />
 
@@ -201,7 +201,7 @@ function Ethics() {
         </section>
 
         <section
-          className="text-gray-600 mt-5 res-margin body-font overflow-hidden"
+          className="text-gray-600 mt-5 res-margin res-top-mar-2 body-font overflow-hidden"
           id="section-2"
         >
           <div className="container px-5 py-6 md:py-16 mx-auto">

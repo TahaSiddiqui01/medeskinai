@@ -345,7 +345,7 @@ export default function Home() {
                 </div>
                 <div className="md:w-1/2 w-full  justify-center absolute handshake-div">
                   <img
-                    className="left-[90%]  relative w-[43%] handshake-img"
+                    className="left-[115%]  relative w-[43%] handshake-img"
                     src="/img/handshake2.png"
                     alt="handshake"
                   />

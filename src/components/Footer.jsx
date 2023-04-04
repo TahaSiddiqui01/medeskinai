@@ -58,7 +58,7 @@ export default function Footer() {
       >
         <div className="px-5 py-2 w-full mx-auto flex md:items-center lg:items-start  flex-wrap ">
           <div className=" md:flex flex-wrap lg:flex-nowrap sm:gap-x-6 lg:px-12 sm:justify-center lg:justify-start md:gap-x-6 gap-x-1 w-full gap-y-5  md:text-left grid grid-cols-1 sm:flex items-center footer-parent py-5">
-            <div className="md:w-[48%] w-full flex md:justify-end">
+            <div className="md:w-[48%] w-full flex md:justify-start">
               <div id="mc_embed_signup">
                 <form
                   action="https://gmail.us5.list-manage.com/subscribe/post?u=9062956d830cb8468d3437ba5&amp;id=6479cb14cc&amp;f_id=00d6f9e9f0"
@@ -183,7 +183,7 @@ export default function Footer() {
                   classification and access to leading skin health
                   professionals.
                 </p>
-                <div className="flex items-center mt-4 md:justify-center justify-start space-x-2">
+                <div className="flex items-center mt-4 md:justify-center justify-socials xs:justify-center sm:justify-center justify-start space-x-2">
                   {/* <a href='https://facebook.com' target='blank' className='w-10 h-10 scale-[0.8] rounded-full mycenter bg-white'><FaFacebookF className='text-[24px] text-primary' /></a> */}
                   <a
                     href="https://twitter.com"

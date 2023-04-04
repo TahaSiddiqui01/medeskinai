@@ -85,13 +85,13 @@ export default function About() {
             <div className="flex items-center space-x-2 absolute left-[50px] tablet:left-[150px] top-0 z-50 md:p-4 p-0">
               <NavLink to={"/"}>
                 <img
-                  className="tablet:w-[150px] w-[100px] mx-1 pl-4 pt-2 sm:pl-0 sm:pt-0 res-logo"
+                  className="tablet:w-[150px] logo-btn w-[100px] mx-1 pl-4 pt-2 sm:pl-0 sm:pt-0 res-logo"
                   src="/img/logo.svg"
                   alt="logo"
                 />
               </NavLink>
             </div>
-            <div className="flex tablet:h-[80px] h-[45px]  absolute top-0 right-0 z-50">
+            <div className="flex login-btn tablet:h-[80px] h-[45px]  absolute top-0 right-0 z-50">
               <NavLink
                 to={"/login"}
                 className="h-full tablet:w-[170px] w-[100px] mycenter res-anchor bg-white text-black"
@@ -107,7 +107,7 @@ export default function About() {
               <div className="slide-1 w-full relative">
                 <img
                   src="/img/image-2.jpg"
-                  className="w-full md:h-[100vh] h-[70vh] object-cover brightness-[70%]"
+                  className="w-full md:h-[100vh] h-[92vh] object-cover brightness-[70%]"
                   alt=""
                 />
 
@@ -199,13 +199,13 @@ export default function About() {
           </div>
         </section>
 
-        <section className="py-[100px]" id="section-2">
+        <section className="py-[100px] res-top-mar" id="section-2">
           <div className="container flex justify-center mx-auto max-w-[1200px]">
             <div>
               <h1 className="sm:w-full text-black-900  font-bold title-font text-2xl  mb-10 text-center text-[35px]">
                 Vision Statement
               </h1>
-              <p className="my-3 text-center text-[20px]">
+              <p className="my-3  text-center text-[20px]">
                 To improve access to Skincare globally and empower individuals
                 around the world; Bridging the gap between patient and
                 healthcare specialist.

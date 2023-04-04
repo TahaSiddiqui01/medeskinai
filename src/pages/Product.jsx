@@ -88,13 +88,13 @@ export default function Product() {
             <div className="flex items-center space-x-2 absolute left-[50px] tablet:left-[150px] top-0 z-50 md:p-4 p-0">
               <NavLink to={"/"}>
                 <img
-                  className="tablet:w-[150px] mx-1 w-[100px] pl-4 pt-2 sm:pl-0 sm:pt-0 res-logo"
+                  className="tablet:w-[150px] logo-btn mx-1 w-[100px] pl-4 pt-2 sm:pl-0 sm:pt-0 res-logo"
                   src="/img/logo.svg"
                   alt="logo"
                 />
               </NavLink>
             </div>
-            <div className="flex tablet:h-[80px] h-[45px]  absolute top-0 right-0 z-50">
+            <div className="flex tablet:h-[80px] login-btn h-[45px]  absolute top-0 right-0 z-50">
               <NavLink
                 to={"/login"}
                 className="h-full tablet:w-[170px] w-[100px] mycenter bg-white res-anchor text-black"
@@ -110,7 +110,7 @@ export default function Product() {
               <div className="slide-1 w-full relative">
                 <img
                   src="/img/Banner.jpg"
-                  className="w-full md:h-[100vh] h-[70vh] object-cover brightness-[70%]"
+                  className="w-full md:h-[100vh] h-[92vh] object-cover brightness-[70%]"
                   alt=""
                 />
 
@@ -204,7 +204,7 @@ export default function Product() {
         </section>
 
         <section
-          className="bg-lightgray res-margin  md:py-[100px] py-[50px] lg:py-[100px] 4xl:py-[250px]"
+          className="bg-lightgray res-margin res-top-mar-2 md:py-[100px] py-[50px] lg:py-[100px] 4xl:py-[250px]"
           id="section-2"
         >
           <div
@@ -339,8 +339,8 @@ export default function Product() {
                 </div>
                 <div className="md:w-1/2 w-full flex justify-center handshake-div absolute">
                   <img
-                    className="left-[90%] mar-c handshake-img-3  handshake2-img  w-[54%] relative lg:pb-[1%] md:pt-[5%]"
-                    src="/img/res-product.png"
+                    className="left-[122%] mar-c handshake-img  handshake-img-2  relative lg:pb-[1%] md:pt-[5%]"
+                    src="/img/FinalImage2-removebg-preview.png"
                     alt=""
                   />
                 </div>

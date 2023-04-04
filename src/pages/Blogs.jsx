@@ -134,13 +134,13 @@ const BlogsNews = () => {
             <div className="flex items-center space-x-2 absolute left-[50px] tablet:left-[150px] top-0 z-50 md:p-4 p-0">
               <NavLink to={"/"}>
                 <img
-                  className="tablet:w-[150px] mx-1 w-[100px] pl-4 pt-2 sm:pl-0 sm:pt-0 res-logo"
+                  className="tablet:w-[150px] logo-btn mx-1 w-[100px] pl-4 pt-2 sm:pl-0 sm:pt-0 res-logo"
                   src="/img/logo.svg"
                   alt="logo"
                 />
               </NavLink>
             </div>
-            <div className="flex tablet:h-[80px] h-[45px]  absolute top-0 right-0 z-50">
+            <div className="flex tablet:h-[80px] h-[45px] login-btn  absolute top-0 right-0 z-50">
               <NavLink
                 to={"/login"}
                 className="h-full tablet:w-[170px] w-[100px] mycenter res-anchor text-black"
@@ -156,7 +156,7 @@ const BlogsNews = () => {
               <div className="slide-1 w-full relative">
                 <img
                   src="/img/Banner1.jpg"
-                  className="w-full md:h-[100vh] h-[70vh] object-cover brightness-[70%]"
+                  className="w-full md:h-[100vh] h-[100vh] object-cover brightness-[70%]"
                   alt=""
                 />
 
@@ -248,7 +248,7 @@ const BlogsNews = () => {
           </div>
         </section>
 
-        <section className="bg-lightgray py-[100px]" id="section-2">
+        <section className="bg-lightgray res-top-mar-2 py-[100px]" id="section-2">
           <div>
             <h4 className="text-center tablet:text-[40px] text-[25px] md:text-[50px] font-bold">
               The Medeskin AI Blog
