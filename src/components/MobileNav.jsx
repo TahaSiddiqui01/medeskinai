@@ -79,7 +79,7 @@ function MobileNav() {
       >
         <section className="md:min-h-screen  w-full banner-section home-page">
           <div className="tablet:w-[80px] w-[50px]  md:h-[100vh] h-[70vh] pb-14 flex flex-col justify-between items-center bg-lightgray mobile-sidebar">
-            <div className="w-[80px] h-[80px] mycenter bg-primary">
+            <div className="w-[80px] h-[80px] mycenter bg-[#0064AA]">
               <div className="mb-0">
                 <HiMenuAlt1
                   className="text-[25px] text-white cursor-pointer"
@@ -101,7 +101,7 @@ function MobileNav() {
               <NavLink to={"/"}>
                 <img
                   className="tablet:w-[150px] logo-btn mt-1 w-[100px] pl-4 pt-2 sm:pl-0 sm:pt-0 ms-4"
-                  src="/img/logo.svg"
+                  src="/img/logo.png"
                   alt="logo"
                 />
               </NavLink>
@@ -206,7 +206,7 @@ function MobileNav() {
             </div>
           </div>
           {/* toggle icon */}
-          <div className="toggle-menu py-8 fixed -left-full top-0 z-50 bg-primary w-60 h-full transition-all duration-500">
+          <div className="toggle-menu py-8 fixed -left-full top-0 z-50 bg-[#0064AA] w-60 h-full transition-all duration-500">
             <div className="header text-right px-6 mb-4">
               <AiOutlineClose
                 className="text-white ml-auto cursor-pointer font-semibold"

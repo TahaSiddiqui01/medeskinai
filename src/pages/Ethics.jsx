@@ -24,7 +24,7 @@ function Ethics() {
       </Helmet> */}
         <section className="flex md:min-h-screen h-[70vh] w-full banner-section">
           <div className="tablet:w-[80px] w-[50px] res-sidebar  md:h-[100vh] h-[70vh] pb-14 flex flex-col justify-between items-center bg-lightgray">
-            <div className="w-[80px] h-[80px] mycenter bg-primary">
+            <div className="w-[80px] h-[80px] mycenter bg-[#0064aa]">
               <div>
                 <HiMenuAlt1
                   className="text-[25px] text-white cursor-pointer"
@@ -70,7 +70,7 @@ function Ethics() {
             </div>
           </div>
           <div className="flex-1">
-            <div className="w-[80px] h-[80px] mycenter bg-primary res-hide">
+            <div className="w-[80px] h-[80px] mycenter bg-[#0064aa] res-hide">
               <div
                 style={{ height: "100%" }}
                 className="d-flex justify-content-center align-items-center"
@@ -87,7 +87,7 @@ function Ethics() {
               <NavLink to={"/"}>
                 <img
                   className="tablet:w-[150px] logo-btn mx-1 w-[100px] pl-4 pt-2 sm:pl-0 sm:pt-0 res-logo"
-                  src="/img/logo.svg"
+                  src="/img/logo.png"
                   alt="logo"
                 />
               </NavLink>
@@ -112,11 +112,11 @@ function Ethics() {
                   alt=""
                 />
 
-                <div className="absolute bottom-[15%] lg:bottom-[25%] 4xl:bottom-[25%] tablet:left-[10%] left-[5%] z-[2] text-white max-w-[800px]">
+                <div className="absolute bottom-[15%] lg:bottom-[25%] 4xl:bottom-[25%] tablet:left-[10%] left-[5%] z-[2] text-white max-w-[800px] responsive-position">
                   {/* <h4 className="text-white text-[40px] 4xl:text-[50px] underline underline-offset-1 mb-8">
                   01
                 </h4> */}
-                  <h5 className="text-white text-[20px] leading-7 4xl:leading-[80px] 4xl:text-[60px] tablet:text-[32px] md:text-[45px] lg:text-[50px] lg:leading-[60px] md:leading-[50px] tablet:leading-[45px] font-semibold">
+                  <h5 className="text-white text-[20px] leading-7 4xl:leading-[80px] 4xl:text-[60px] tablet:text-[32px] md:text-[45px] lg:text-[50px] lg:leading-[60px] md:leading-[50px] tablet:leading-[45px] font-semibold responsive-card-heading">
                     Ethics and Safety
                     <br />
                   </h5>
@@ -131,7 +131,7 @@ function Ethics() {
             </div>
           </div>
           {/* toggle icon */}
-          <div className="toggle-menu py-8 fixed -left-full top-0 z-50 bg-primary w-80 h-full transition-all duration-500">
+          <div className="toggle-menu py-8 fixed -left-full top-0 z-50 bg-[#0064aa] w-80 h-full transition-all duration-500">
             <div className="header text-right px-6 mb-4">
               <AiOutlineClose
                 className="text-white ml-auto cursor-pointer font-semibold"
@@ -218,11 +218,13 @@ function Ethics() {
                 </p>
               </div>
               {/* <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 max-h-[400px] object-cover object-center rounded-xl" src="/img/girl-bag.jpg" /> */}
-              <img
-                src="/img/girl-bag.jpg"
-                alt="ecommerce"
-                className="w-full rounded-xl max-h-[400px] max-w-[400px]"
-              />
+              <div className="ethics-image">
+                <img
+                  src="/img/girl-bag.jpg"
+                  alt="ecommerce"
+                  className="w-full rounded-xl max-h-[400px] max-w-[400px]"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -230,9 +232,9 @@ function Ethics() {
         <section className="text-gray-600 body-font overflow-hidden">
           <div className="container px-5 py-6 md:py-16 mx-auto">
             <div className="flex justify-content-between align-items-center flex-wrap-md flex-row-reverse ethics-card ethics-card-2">
-              <div className="order-1 mx-3 w-[50%] full-width lg:order-2  lg: lg:py-6 mb-6 lg:mb-0">
+              <div className="order-1 w-[50%] full-width lg:order-2  lg: lg:py-6 mb-6 lg:mb-0">
                 <h1 className="text-black lg:text-[40px] tablet:text-[30px] text-[24px] title-font font-bold mb-4">
-                  Law Compliance
+                  Compliance
                 </h1>
                 <p className="leading-relaxed mb-4">
                   We adhere to all internal and external business rules,
@@ -242,11 +244,14 @@ function Ethics() {
                   employees, partners, and the government.
                 </p>
               </div>
-              <img
-                src="/img/pexels-pixabay-48148.png"
-                alt="pen"
-                className="w-full max-h-[400px] max-w-[400px]  rounded-xl order-2 lg:order-1"
-              />
+
+              {/* <div className="compliance"> */}
+                <img
+                  src="/img/pexels-pixabay-48148.png"
+                  alt="pen"
+                  className="w-full max-h-[400px] pixabay-img max-w-[400px] negative-margin rounded-xl order-2 lg:order-1"
+                />
+              {/* </div> */}
 
               {/* <img alt="ecommerce" className="order-2 lg:order-1 pr-10 w-full lg:h-auto h-64 max-h-[400px] rounded-xl" src="/img/pen.png" /> */}
             </div>
@@ -271,11 +276,13 @@ function Ethics() {
                 </p>
               </div>
               {/* <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto h-64 max-h-[400px] object-cover object-center rounded-xl" src="/img/laptop-bg.png" /> */}
-              <img
-                src="/img/pexels-kevin-paster-1901388.png"
-                alt="ecommerce"
-                className="w-full rounded-xl max-h-[400px] max-w-[400px] "
-              />
+              <div className="ethics-image">
+                <img
+                  src="/img/pexels-kevin-paster-1901388.png"
+                  alt="ecommerce"
+                  className="w-full rounded-xl max-h-[400px] max-w-[400px] "
+                />
+              </div>
             </div>
           </div>
         </section>

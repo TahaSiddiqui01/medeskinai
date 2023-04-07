@@ -49,7 +49,7 @@ const SearchResults = () => {
     <div className={toggleIcon ? "toggle-icon pb-10 bg-lightgray " : "pb-10 bg-lightgray "}>
       <section className="flex md:min-h-screen h-[70vh] w-full banner-section">
         <div className="tablet:w-[80px] w-[50px]  md:h-[100vh] h-[70vh] pb-14 flex flex-col justify-between items-center bg-lightgray">
-          <div className="w-[80px] h-[80px] mycenter bg-primary">
+          <div className="w-[80px] h-[80px] mycenter bg-[#0064AA]">
             <div>
               <HiMenuAlt1 className="text-[25px] text-white cursor-pointer" onClick={() => { setToggleIcon(true) }} />
             </div>
@@ -94,7 +94,7 @@ const SearchResults = () => {
             <NavLink to={'/'}>
               <img
                 className="tablet:w-[150px] w-[100px] pl-4 pt-2 sm:pl-0 sm:pt-0"
-                src="/img/logo.svg"
+                src="/img/logo.png"
                 alt="logo"
               />
             </NavLink>

@@ -20,7 +20,7 @@ import Ethics from "./pages/Ethics";
 import SingleBlog from "./pages/SingleBlog";
 import EditBlog from "./pages/admin/blogs/EditBlog";
 import Register from "./pages/auth/Register";
-import NotFound from './pages/NotFound';
+import NotFound from "./pages/NotFound";
 import ForgotPassword from "./pages/auth/ForgotPassword";
 import ResetPassword from "./pages/auth/ResetPassword";
 function App() {

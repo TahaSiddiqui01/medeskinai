@@ -31,11 +31,12 @@ const BlogExample = () => {
       axios
         .get("/blogs/" + id)
         .then((res) => {
+          console.log("Blog Response: ", res);
           setCategory(res.data.category);
           setTitle(res.data.title);
           setDescription(res.data.description);
           setContent(res.data.content);
-          setImage(res.data.featured_image);
+          setImage("https://medeskin.ai/" + res.data.featured_image);
           setCoverImage(res.data.cover_image);
           setCreatedAt(res.data.createdAt);
           setupdatedAt(res.data.createdAt);
@@ -56,9 +57,9 @@ const BlogExample = () => {
   return (
     <DocumentMeta {...meta}>
       <div className={toggleIcon ? "toggle-icon" : ""}>
-        <section className="flex min-h-screen w-full banner-section">
-          <div className="tablet:w-[80px] w-[50px]   h-[100vh] pb-14 flex flex-col justify-between items-center bg-lightgray">
-            <div className="w-[80px] h-[80px] mycenter bg-primary">
+        <section className="flex min-h-screen w-full banner-section banner-blog">
+          <div className="tablet:w-[80px] w-[50px] blog-category-nav  h-[100vh] pb-14 flex flex-col justify-between items-center bg-lightgray">
+            <div className="w-[80px] h-[80px] mycenter bg-[#0064aa] ">
               <div>
                 <HiMenuAlt1
                   className="text-[25px] text-white cursor-pointer"
@@ -68,25 +69,25 @@ const BlogExample = () => {
                 />
               </div>
             </div>
-            <div className="flex flex-col space-y-20 text-black flex-1 justify-center items-center">
+            <div className="flex flex-col space-y-20 text-black flex-1 justify-center items-center main_social">
               {/* <div>
               <FaFacebookF />
             </div> */}
-              <div>
+              <div className="icon_div">
                 <FaTwitter />
               </div>
-              <div>
+              <div className="icon_div">
                 <a href="hhttps://www.linkedin.com/company/medeskin-ai">
                   <FaLinkedinIn />
                 </a>
               </div>
-              <div>
+              <div className="icon_div">
                 <a href="https://www.instagram.com/medeskin_ai/">
                   <FaInstagram />
                 </a>
               </div>
             </div>
-            <div className="text-black">
+            <div className="text-black social_text">
               <div className="flex flex-col items-center">
                 <a href="#section-2">
                   <div className="flex flex-col">
@@ -107,13 +108,13 @@ const BlogExample = () => {
             <div className="flex items-center space-x-2 absolute left-[50px] tablet:left-[150px] top-0 z-50  md:p-4 p-0">
               <NavLink to={"/"}>
                 <img
-                  className="tablet:w-[150px] w-[100px] pl-4 pt-2 sm:pl-0 sm:pt-0"
-                  src="/img/logo.svg"
+                  className="tablet:w-[150px] mx-4 logo-btn w-[100px] pl-4 pt-2 sm:pl-0 sm:pt-0"
+                  src="/img/logo.png"
                   alt="logo"
                 />
               </NavLink>
             </div>
-            <div className="flex tablet:h-[80px] h-[45px]  absolute top-0 right-0 z-50">
+            <div className="flex tablet:h-[80px] h-[45px] login-btn login-btn2 absolute top-0 right-0 z-50">
               <NavLink
                 to={"/login"}
                 className="h-full tablet:w-[170px] w-[100px] mycenter bg-white text-black"
@@ -128,16 +129,17 @@ const BlogExample = () => {
             <div className=" flex-1 relative">
               <div className="slide-1 w-full relative">
                 <img
+                  // src="/img/image-2.jpg"
                   src={image}
                   className="w-full h-[100vh] object-cover brightness-[70%]"
                   alt=""
                 />
 
-                <div className="absolute bottom-[15%] lg:bottom-[25%]  4xl:bottom-[25%] tablet:left-[10%] left-[5%] z-[2] text-white max-w-[800px]">
+                <div className="absolute bottom-[15%] lg:bottom-[25%]  4xl:bottom-[25%] tablet:left-[10%] left-[5%] z-[2] text-white max-w-[800px] responsive-position">
                   {/* <h4 className="text-white text-[40px] 4xl:text-[50px] underline underline-offset-1 mb-8">
                   01
                 </h4> */}
-                  <h5 className="text-white text-[20px] leading-7 4xl:leading-[80px] 4xl:text-[60px] tablet:text-[32px] md:text-[45px] lg:text-[50px] lg:leading-[60px] md:leading-[50px] tablet:leading-[45px] font-semibold">
+                  <h5 className="text-white text-[20px] leading-7 4xl:leading-[80px] 4xl:text-[60px] tablet:text-[32px] md:text-[45px] lg:text-[50px] lg:leading-[60px] md:leading-[50px] tablet:leading-[45px] font-semibold responsive-card-heading">
                     {title}
                   </h5>
                   <p className="desc mt-8 max-w-[500px] 4xl:max-w-[100%] text-[14px] 4xl:text-[23px] tablet:text-[18px]">
@@ -156,7 +158,7 @@ const BlogExample = () => {
             </div>
           </div>
           {/* toggle icon */}
-          <div className="toggle-menu py-8 fixed -left-full top-0 z-50 bg-primary w-80 h-full transition-all duration-500">
+          <div className="toggle-menu py-8 fixed -left-full top-0 z-50 bg-[#0064AA] w-80 h-full transition-all duration-500">
             <div className="header text-right px-6 mb-4">
               <AiOutlineClose
                 className="text-white ml-auto cursor-pointer font-semibold"

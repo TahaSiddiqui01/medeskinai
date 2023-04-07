@@ -86,7 +86,7 @@ const SearchResults = () => {
             <NavLink to={'/'}>
               <img
                 className="tablet:w-[150px] w-[100px] pl-4 pt-2 sm:pl-0 sm:pt-0"
-                src="/img/logo.svg"
+                src="/img/logo.png"
                 alt="logo"
               />
             </NavLink>
@@ -124,7 +124,7 @@ const SearchResults = () => {
           </div>
         </div>
         {/* toggle icon */}
-        <div className="toggle-menu py-8 fixed -left-full top-0 z-50 bg-primary w-80 h-full transition-all duration-500">
+        <div className="toggle-menu py-8 fixed -left-full top-0 z-50 bg-[#0064AA] w-80 h-full transition-all duration-500">
           <div className="header text-right px-6 mb-4">
             <AiOutlineClose className="text-white ml-auto cursor-pointer font-semibold" onClick={() => { setToggleIcon(false) }} />
           </div>

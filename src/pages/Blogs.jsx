@@ -9,6 +9,8 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { AiOutlineClose } from "react-icons/ai";
 import LatestBlogs from "../components/LatestBlogs";
 import DocumentMeta from "react-document-meta";
+const BASE_URL = "https://medeskin.ai/";
+
 const BlogsNews = () => {
   const [blog, setBlog] = useState([]);
   const [skinBlog, setSkinBlog] = useState([]);
@@ -72,7 +74,7 @@ const BlogsNews = () => {
       >
         <section className="flex md:min-h-screen h-[70vh] w-full banner-section">
           <div className="tablet:w-[80px] res-sidebar w-[50px]  md:h-[100vh] h-[70vh] pb-14 flex flex-col justify-between items-center bg-lightgray">
-            <div className="w-[80px] h-[80px] mycenter bg-primary">
+            <div className="w-[80px] h-[80px] mycenter bg-[#0064aa]">
               <div>
                 <HiMenuAlt1
                   className="text-[25px] text-white cursor-pointer"
@@ -118,7 +120,7 @@ const BlogsNews = () => {
             </div>
           </div>
           <div className="flex-1">
-            <div className="w-[80px] h-[80px] mycenter bg-primary res-hide">
+            <div className="w-[80px] h-[80px] mycenter bg-[#0064aa] res-hide">
               <div
                 style={{ height: "100%" }}
                 className="d-flex justify-content-center align-items-center"
@@ -135,7 +137,7 @@ const BlogsNews = () => {
               <NavLink to={"/"}>
                 <img
                   className="tablet:w-[150px] logo-btn mx-1 w-[100px] pl-4 pt-2 sm:pl-0 sm:pt-0 res-logo"
-                  src="/img/logo.svg"
+                  src="/img/logo.png"
                   alt="logo"
                 />
               </NavLink>
@@ -160,11 +162,11 @@ const BlogsNews = () => {
                   alt=""
                 />
 
-                <div className="absolute bottom-[15%] lg:bottom-[25%]  4xl:bottom-[25%] tablet:left-[10%] left-[5%] z-[2] text-white max-w-[800px]">
+                <div className="absolute bottom-[15%] lg:bottom-[25%]  4xl:bottom-[25%] tablet:left-[10%] left-[5%] z-[2] text-white max-w-[800px] responsive-position">
                   {/* <h4 className="text-white text-[40px] 4xl:text-[50px] underline underline-offset-1 mb-8">
                   01
                 </h4> */}
-                  <h5 className="text-white text-[20px] leading-7 4xl:leading-[80px] 4xl:text-[60px] tablet:text-[32px] md:text-[45px] lg:text-[50px] lg:leading-[60px] md:leading-[50px] tablet:leading-[45px] font-semibold">
+                  <h5 className="text-white text-[20px] leading-7 4xl:leading-[80px] 4xl:text-[60px] tablet:text-[32px] md:text-[45px] lg:text-[50px] lg:leading-[60px] md:leading-[50px] tablet:leading-[45px] font-semibold responsive-card-heading">
                     News & Blogs
                     <br />
                   </h5>
@@ -179,7 +181,7 @@ const BlogsNews = () => {
             </div>
           </div>
           {/* toggle icon */}
-          <div className="toggle-menu py-8 fixed -left-full top-0 z-50 bg-primary w-80 h-full transition-all duration-500">
+          <div className="toggle-menu py-8 fixed -left-full top-0 z-50 bg-[#0064aa] w-80 h-full transition-all duration-500">
             <div className="header text-right px-6 mb-4">
               <AiOutlineClose
                 className="text-white ml-auto cursor-pointer font-semibold"
@@ -248,7 +250,10 @@ const BlogsNews = () => {
           </div>
         </section>
 
-        <section className="bg-lightgray res-top-mar-2 py-[100px]" id="section-2">
+        <section
+          className="bg-lightgray res-top-mar-2 py-[100px]"
+          id="section-2"
+        >
           <div>
             <h4 className="text-center tablet:text-[40px] text-[25px] md:text-[50px] font-bold">
               The Medeskin AI Blog
@@ -307,7 +312,7 @@ const BlogsNews = () => {
                     <div className="md:w-1/2">
                       <img
                         className="w-full lg:max-h-[450px] tablet:max-h-[400px] max-h-[250px] object-cover rounded-lg"
-                        src={skinFirstBlog.cover_image}
+                        src={BASE_URL + skinFirstBlog.cover_image}
                         alt=""
                       />
                     </div>
@@ -342,7 +347,9 @@ const BlogsNews = () => {
                         <div className="rounded-sm shadow-lg overflow-hidden h-full">
                           <img
                             className="w-full tablet:h-[300px] h-[250px] object-cover rounded-t-lg"
-                            src={blog.cover_image}
+                            src={BASE_URL + blog.cover_image}
+                            // src="https://medeskin.ai/uploads/blogs/cover_image/pexels-andrea-piacquadio-3771830.jpg"
+                            // alt={BASE_URL}
                             alt={blog.title}
                           />
                           <div className="content px-4 py-2 flex flex-col space-y-2">

@@ -26,7 +26,7 @@ export default function Product() {
       >
         <section className="flex md:min-h-screen h-[70vh] res-height w-full banner-section">
           <div className="tablet:w-[80px] w-[50px]  md:h-[100vh] h-[70vh] pb-14 flex flex-col justify-between items-center bg-lightgray res-sidebar">
-            <div className="w-[80px] h-[80px] mycenter bg-primary">
+            <div className="w-[80px] h-[80px] mycenter bg-[#0064AA]">
               <div>
                 <HiMenuAlt1
                   className="text-[25px] text-white cursor-pointer"
@@ -72,7 +72,7 @@ export default function Product() {
             </div>
           </div>
           <div className="flex-1">
-            <div className="w-[80px] h-[80px] mycenter bg-primary res-hide">
+            <div className="w-[80px] h-[80px] mycenter bg-[#0064aa] res-hide">
               <div
                 style={{ height: "100%" }}
                 className="d-flex justify-content-center align-items-center"
@@ -89,7 +89,7 @@ export default function Product() {
               <NavLink to={"/"}>
                 <img
                   className="tablet:w-[150px] logo-btn mx-1 w-[100px] pl-4 pt-2 sm:pl-0 sm:pt-0 res-logo"
-                  src="/img/logo.svg"
+                  src="/img/logo.png"
                   alt="logo"
                 />
               </NavLink>
@@ -114,11 +114,11 @@ export default function Product() {
                   alt=""
                 />
 
-                <div className="absolute bottom-[15%] lg:bottom-[25%]  4xl:bottom-[25%] tablet:left-[10%] left-[5%] z-[2] text-white max-w-[800px]">
+                <div className="absolute bottom-[15%] lg:bottom-[25%]  4xl:bottom-[25%] tablet:left-[10%] left-[5%] z-[2] text-white max-w-[800px] responsive-position">
                   {/* <h4 className="text-white text-[40px] 4xl:text-[50px] underline underline-offset-1 mb-8">
                   01
                 </h4> */}
-                  <h5 className="text-white text-[20px] leading-7 4xl:leading-[80px] 4xl:text-[60px] tablet:text-[32px] md:text-[45px] lg:text-[50px] lg:leading-[60px] md:leading-[50px] tablet:leading-[45px] font-semibold">
+                  <h5 className="text-white text-[20px] leading-7 4xl:leading-[80px] 4xl:text-[60px] tablet:text-[32px] md:text-[45px] lg:text-[50px] lg:leading-[60px] md:leading-[50px] tablet:leading-[45px] font-semibold responsive-card-heading">
                     Redefining Skin Health & Care
                     <br />
                   </h5>
@@ -134,7 +134,7 @@ export default function Product() {
             </div>
           </div>
           {/* toggle icon */}
-          <div className="toggle-menu py-8 fixed -left-full top-0 z-50 bg-primary w-80 h-full transition-all duration-500">
+          <div className="toggle-menu py-8 fixed -left-full top-0 z-50 bg-[#0064aa] w-80 h-full transition-all duration-500">
             <div className="header text-right px-6 mb-4">
               <AiOutlineClose
                 className="text-white ml-auto cursor-pointer font-semibold"
@@ -212,7 +212,7 @@ export default function Product() {
             className="flex   w-full  md:pt-[1%] md:pb-[1%] lg:pt-[4%] lg:pb-[4%]  py-[150px] text-white px-5 res-container-parent"
           >
             <div className="container res-container">
-              <div className="flex items-center md:flex-row flex-col download-parent">
+              <div className="flex items-center md:flex-row flex-col download-parent responsive-gap">
                 <div className="max-w-[600px] 4xl:max-w-[800px] flex flex-col  md:space-y-2 lg:space-y-6 md:w-1/2 w-full">
                   <h3 className="4xl:text-[40px] lg:text-[35px] md:text-[20px] tablet:text-[30px] text-[25px] leading-[55px] font-semibold">
                     Instant Cosmetic Issue Classification
@@ -263,7 +263,7 @@ export default function Product() {
               <div className="flex items-center md:flex-row flex-col  bluegreen-parent">
                 <div className="md:w-1/2 w-full flex justify-center absolute handshake-div">
                   <img
-                    className="mar-b relative fixed-img-size w-[43%] pt-[5%] handshake-img  handshake-img-2"
+                    className="mar-b relative fixed-img-size w-[43%] pt-[5%] handshake-img  handshake-img-2 responsive-margin"
                     src="/img/bluegreen2.png"
                     alt=""
                   />
@@ -309,7 +309,7 @@ export default function Product() {
             className="flex w-full md:pt-[1%] md:pb-[1%] lg:pt-[5%] lg:pb-[5%] py-[150px] 4xl:py-[170px] text-white px-5 res-container-parent"
           >
             <div className="container res-container">
-              <div className="flex items-center md:flex-row flex-col download-parent">
+              <div className="flex items-center md:flex-row flex-col download-parent responsive-gap3">
                 <div className="max-w-[600px] 4xl:max-w-[800px] flex flex-col  space-y-6 md:w-1/2 w-full">
                   <h3 className="4xl:text-[50px] lg:text-[30px] md:text-[20px] tablet:text-[30px] text-[25px]  font-semibold">
                     Your Skin Doctor 24/7/365, Even On The Go!

@@ -80,7 +80,7 @@ export default function Home() {
       >
         <section className="flex desktop-nav md:min-h-screen h-[70vh] w-full banner-section home-page">
           <div className="tablet:w-[80px] w-[50px]  md:h-[100vh] h-[70vh] pb-14 flex flex-col justify-between items-center bg-lightgray ">
-            <div className="w-[80px] h-[80px] mycenter bg-primary">
+            <div className="w-[80px] h-[80px] mycenter bg-[#0064AA]">
               <div>
                 <HiMenuAlt1
                   className="text-[25px] text-white cursor-pointer"
@@ -131,7 +131,7 @@ export default function Home() {
               <NavLink to={"/"}>
                 <img
                   className="tablet:w-[150px] w-[100px] pl-4 pt-2 sm:pl-0 sm:pt-0"
-                  src="/img/logo.svg"
+                  src="/img/logo.png"
                   alt="logo"
                 />
               </NavLink>
@@ -236,7 +236,7 @@ export default function Home() {
             </div>
           </div>
           {/* toggle icon */}
-          <div className="toggle-menu py-8 fixed -left-full top-0 z-50 bg-primary w-80 h-full transition-all duration-500">
+          <div className="toggle-menu py-8 fixed -left-full top-0 z-50 bg-[#0064AA] w-80 h-full transition-all duration-500">
             <div className="header text-right px-6 mb-4">
               <AiOutlineClose
                 className="text-white ml-auto cursor-pointer font-semibold"
@@ -453,34 +453,34 @@ export default function Home() {
             <div className="lg:flex lg:justify-evenly grid-cols-2 grid tablet:grid-cols-3  gap-6 d-flex justify-content-center align-items-center flex-wrap">
               <div className="flex-col  flex items-center ">
                 <b className="lg:text-[25px] partner-info-heading md:text-[50px] text-[45px]">
-                  9+ Million{" "}
+                  35+ Skin conditions{" "}
                 </b>
                 <span
                   style={{ textAlign: "center" }}
-                  className="w-[300px] lg:text-[18px] partner-light-heading md:text-[24px] text-[18px]  flex mt-[-5px]"
+                  className="w-[300px] lg:text-[18px] partner-light-heading md:text-[24px] text-[18px]  flex mt-[-5px] partner-info-sub-heading"
                 >
-                  Patients Registered on the HIMSS
+                  identifiable and more on the way!
                 </span>
               </div>
               <div className="flex-col  flex items-center">
                 <b className="lg:text-[25px] partner-info-heading md:text-[50px] text-[45px]">
-                  150+ Locations
+                  97% Accuracy
                 </b>
-                <span className="lg:text-[18px] partner-light-heading md:text-[24px] text-[18px] flex mt-[-5px]">
-                  Across
+                <span className="lg:text-[18px] partner-light-heading md:text-[24px] text-[18px] flex mt-[-5px] partner-info-sub-heading">
+                  with seconds for response
                 </span>
-                <b className="lg:text-[20px] mt-3 partner-info-heading md:text-[50px] text-[45px]">
+                {/* <b className="lg:text-[20px] mt-3 partner-info-heading md:text-[50px] text-[45px]">
                   10 + Countries
-                </b>
+                </b> */}
               </div>
               <div className="flex-col  flex items-center">
                 <b
                   style={{ textAlign: "center" }}
-                  className="lg:text-[25px] md:text-[50px] partner-info-heading w-[200px] text-[35px]"
+                  className="lg:text-[25px] md:text-[50px] partner-info-heading2 w-[200px] text-[35px]"
                 >
                   DPA, GDPR, HIPAA
                 </b>
-                <span className="lg:text-[18px] partner-light-heading md:text-[24px] text-[18px] flex mt-[-5px]">
+                <span className="lg:text-[18px] partner-light-heading md:text-[24px] text-[18px] flex mt-[-5px] partner-info-sub-heading2">
                   Compliant
                 </span>
               </div>
@@ -490,7 +490,7 @@ export default function Home() {
                 </b>
                 <span
                   style={{ textAlign: "center" }}
-                  className="w-[200px] partner-light-heading lg:text-[18px] md:text-[24px] text-[18px] flex mt-[-5px]"
+                  className="w-[200px] partner-light-heading lg:text-[18px] md:text-[24px] text-[18px] flex mt-[-5px] partner-info-sub-heading"
                 >
                   Illness Classifications and more on the way!
                 </span>

@@ -176,8 +176,12 @@ export default function Footer() {
             </div>
             <div className="md:w-[48%] w-full ">
               <div className="md:pr-4 pr-0">
-                <img className="my-4" src="/img/logo.svg" alt="logo" />
-                <p className="leading-[29px] mt-8">
+                <img
+                  className="my-4 footer-logo"
+                  src="/img/logo.png"
+                  alt="logo"
+                />
+                <p className="leading-[29px] footer-text mt-8">
                   Medeskin AI is a free AI powered mobile app revolutionizing
                   skin health and care by offering quick cosmetic issue
                   classification and access to leading skin health
@@ -186,12 +190,12 @@ export default function Footer() {
                 <div className="flex items-center mt-4 md:justify-center justify-socials xs:justify-center sm:justify-center justify-start space-x-2">
                   {/* <a href='https://facebook.com' target='blank' className='w-10 h-10 scale-[0.8] rounded-full mycenter bg-white'><FaFacebookF className='text-[24px] text-primary' /></a> */}
                   <a
-                    href="https://twitter.com"
+                    href="https://twitter.com/@medeskinai"
                     target="blank"
                     className="w-10 h-10 scale-[0.8] rounded-full mycenter bg-white"
                   >
                     {" "}
-                    <FaTwitter className="text-[24px] text-primary" />
+                    <FaTwitter className="text-[24px] text-[#0064aa]" />
                   </a>
                   <a
                     href="https://www.linkedin.com/company/medeskin-ai"
@@ -199,7 +203,7 @@ export default function Footer() {
                     className="w-10 h-10 scale-[0.8] rounded-full mycenter bg-white"
                   >
                     {" "}
-                    <FaLinkedinIn className="text-[24px] text-primary" />
+                    <FaLinkedinIn className="text-[24px] text-[#0064aa]" />
                   </a>
                   <a
                     href="https://www.instagram.com/medeskin_ai/"
@@ -207,7 +211,7 @@ export default function Footer() {
                     className="w-10 h-10 scale-[0.8] rounded-full mycenter bg-white"
                   >
                     {" "}
-                    <FaInstagram className="text-[24px] text-primary" />
+                    <FaInstagram className="text-[24px] text-[#0064aa]" />
                   </a>
                 </div>
               </div>
