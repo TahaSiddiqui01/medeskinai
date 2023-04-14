@@ -109,7 +109,7 @@ const BlogExample = () => {
               <NavLink to={"/"}>
                 <img
                   className="tablet:w-[150px] mx-4 logo-btn w-[100px] pl-4 pt-2 sm:pl-0 sm:pt-0"
-                  src="/img/logo.png"
+                  src="/img/newLogo.png"
                   alt="logo"
                 />
               </NavLink>

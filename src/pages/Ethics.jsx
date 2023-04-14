@@ -87,7 +87,7 @@ function Ethics() {
               <NavLink to={"/"}>
                 <img
                   className="tablet:w-[150px] logo-btn mx-1 w-[100px] pl-4 pt-2 sm:pl-0 sm:pt-0 res-logo"
-                  src="/img/logo.png"
+                  src="/img/newLogo.png"
                   alt="logo"
                 />
               </NavLink>

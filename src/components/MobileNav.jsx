@@ -101,7 +101,7 @@ function MobileNav() {
               <NavLink to={"/"}>
                 <img
                   className="tablet:w-[150px] logo-btn mt-1 w-[100px] pl-4 pt-2 sm:pl-0 sm:pt-0 ms-4"
-                  src="/img/logo.png"
+                  src="/img/newLogo.png"
                   alt="logo"
                 />
               </NavLink>
