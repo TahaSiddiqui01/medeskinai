@@ -40,13 +40,13 @@ const SearchResults = () => {
     <DocumentMeta {...meta}>
     <div className={toggleIcon ? "toggle-icon pb-10 bg-lightgray " : "pb-10 bg-lightgray "}>
       <section className="flex md:min-h-screen h-[70vh] w-full banner-section">
-        <div className="tablet:w-[80px] w-[50px]  md:h-[100vh] h-[70vh] pb-14 flex flex-col justify-between items-center bg-lightgray">
-          <div className="w-[80px] h-[80px] mycenter bg-primary">
+        <div className="tablet:w-[80px] w-[50px] res-sidediv  md:h-[100vh] h-[70vh] pb-14 flex flex-col justify-between items-center bg-transparent">
+          <div className="w-[80px] h-[80px] mycenter bg-[#0064AA]">
             <div>
               <HiMenuAlt1 className="text-[25px] text-white cursor-pointer" onClick={() => { setToggleIcon(true) }} />
             </div>
           </div>
-          <div className="flex flex-col md:space-y-20 space-y-10 text-black flex-1 justify-center items-center">
+          <div className="flex flex-col md:space-y-20 space-y-10 text-black flex-1 justify-center items-center res-account">
             {/* <div>
               <FaFacebookF />
             </div> */}
@@ -64,7 +64,7 @@ const SearchResults = () => {
               </a>
             </div>
           </div>
-          <div className="text-black">
+          <div className="text-black social_text">
             <div className="flex flex-col items-center">
               <a href="#section-2">
                 <div className="flex flex-col">
@@ -82,17 +82,17 @@ const SearchResults = () => {
           </div>
         </div>
         <div className="flex-1">
-          <div className="flex items-center space-x-2 absolute left-[50px] tablet:left-[150px] top-0 z-50 md:p-4 p-0">
+          <div className="flex items-center space-x-2 absolute left-[50px] tablet:left-[150px] responsive-logo-pos top-0 z-50 md:p-4 p-0">
             <NavLink to={'/'}>
               <img
-                className="tablet:w-[150px] w-[100px] pl-4 pt-2 sm:pl-0 sm:pt-0"
+                className="tablet:w-[150px] w-[100px] pl-4 pt-2 sm:pl-0 sm:pt-0  res-blog-logo"
                 src="/img/newLogo.png"
                 alt="logo"
               />
             </NavLink>
           </div>
           <div className="flex tablet:h-[80px] h-[45px]  absolute top-0 right-0 z-50">
-            <NavLink to={'/login'} className="h-full tablet:w-[170px] w-[100px] mycenter bg-white text-black">
+            <NavLink to={'/login'} className="h-full tablet:w-[170px] w-[100px] mycenter res-anchor bg-white text-black">
               Login
             </NavLink>
             {/* <button className="h-full w-[90px] text-white bg-primarylight mycenter">
@@ -104,11 +104,11 @@ const SearchResults = () => {
             <div className="slide-1 w-full relative">
               <img
                 src="/img/image-2.jpg"
-                className="w-full md:h-[100vh] h-[70vh] object-cover brightness-[70%]"
+                className="w-full md:h-[100vh] h-[100vh] object-cover brightness-[70%]"
                 alt=""
               />
 
-              <div className="absolute bottom-[15%] lg:bottom-[25%]  4xl:bottom-[25%] tablet:left-[10%] left-[5%] z-[2] text-white max-w-[800px]">
+              <div className="absolute bottom-[15%] lg:bottom-[25%]  4xl:bottom-[25%] tablet:left-[10%] left-[5%] z-[2] text-white max-w-[800px] responsive-position">
                 {/* <h4 className="text-white text-[40px] 4xl:text-[50px] underline underline-offset-1 mb-8">
                   01
                 </h4> */}

@@ -79,7 +79,7 @@ export default function Home() {
         }
       >
         <section className="flex desktop-nav md:min-h-screen h-[70vh] w-full banner-section home-page">
-          <div className="tablet:w-[80px] w-[50px]  md:h-[100vh] h-[70vh] pb-14 flex flex-col justify-between items-center bg-lightgray ">
+          <div className="tablet:w-[80px] w-[50px] md:h-[100vh] h-[70vh] pb-14 flex flex-col justify-between items-center bg-lightgray ">
             <div className="w-[80px] h-[80px] mycenter bg-[#0064AA]">
               <div>
                 <HiMenuAlt1

@@ -116,7 +116,7 @@ const SearchResults = () => {
                 alt=""
               />
 
-              <div className="absolute bottom-[15%] lg:bottom-[25%]  4xl:bottom-[25%] tablet:left-[10%] left-[5%] z-[2] text-white max-w-[800px]">
+              <div className="absolute bottom-[15%] lg:bottom-[25%]  4xl:bottom-[25%] tablet:left-[10%] left-[5%] z-[2] text-white max-w-[800px] responsive-position">
                 {/* <h4 className="text-white text-[40px] 4xl:text-[50px] underline underline-offset-1 mb-8">
                   01
                 </h4> */}
@@ -135,7 +135,7 @@ const SearchResults = () => {
           </div>
         </div>
         {/* toggle icon */}
-        <div className="toggle-menu py-8 fixed -left-full top-0 z-50 bg-primary w-80 h-full transition-all duration-500">
+        <div className="toggle-menu py-8 fixed -left-full top-0 z-50 bg-[#0064aa] w-80 h-full transition-all duration-500">
           <div className="header text-right px-6 mb-4">
             <AiOutlineClose className="text-white ml-auto cursor-pointer font-semibold" onClick={() => { setToggleIcon(false) }} />
           </div>

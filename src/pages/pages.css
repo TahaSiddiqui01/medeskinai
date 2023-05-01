@@ -460,6 +460,24 @@
   .res-height {
     /* height: 0px !important; */
   }
+
+  .responsive-logo-pos{
+    position: static !important;
+  }
+
+  .res-sidediv{
+    position: absolute;
+  }
+
+  .res-blog-logo{
+    width: 110px !important;
+    margin: 1rem 5rem !important;
+  }
+
+  .res_navigation_btn{
+    background-color: rgb(0 100 170 / var(--tw-bg-opacity));
+  }
+
 }
 
 @media screen and (max-width: 375px) {
